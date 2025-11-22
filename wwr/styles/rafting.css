@@ -65,10 +65,10 @@ article{
 /* Hero heading overlay */
 .hero h1 {
     position: absolute;
-    top: 20px; /* move to top of hero image */
+    top: 10px; /* move to top of hero image */
     left: 0;
     width: 100%;
-    padding: 15px;
+    padding: 0px;
     text-align: center;
     font-size: 2rem;
     background-color: var(--accent1-color);
@@ -101,10 +101,10 @@ article{
 /* Hero article overlay */
 .hero article {
     position: absolute;
-    bottom: 20px; /* place at bottom */
+    top: 20px; /* place at bottom */
     left: 20px;
-    max-width: 60%;
-    padding: 15px;
+    max-width: 100%;
+    padding: 0px;
     text-align: left;
     font-size: 16px;
     background-color: rgba(242, 160, 13, 0.85); /* semi-transparent accent1 */
