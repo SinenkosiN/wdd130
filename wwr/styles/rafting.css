@@ -87,7 +87,7 @@ article{
 /* Hero article overlay */
 .hero article {
     position: absolute;
-    bottom: 20px; /* place at bottom */
+    top: 20px; /* place at bottom */
     left: 20px;
     max-width: 60%;
     padding: 15px;
