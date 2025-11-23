@@ -1,10 +1,11 @@
 :root {
-    --primary-color: #0a0ca2;
-    --secondary-color: #eafc25;
+    --primary-color: #0b5f8a;
+    --secondary-color: #0a8f6b;
     --accent1-color: #fba00d;
     --accent2-color: #ffffff; /* corrected from --accedent2-color */
     --heading-font: "Arial", sans-serif; /* corrected spelling and quotes */
     --body-font: Verdana, Helvetica, sans-serif; /* corrected spelling and commas */
+    ---max-width:840px ;
 }
 
 /* Header */
@@ -24,6 +25,8 @@ header {
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
+    background-color: #ffffff;
+    line-height: 1.5;
 }
 
 /* Page width and centering */
@@ -43,6 +46,17 @@ nav, p, section, article {
     margin: 16px;
     padding: 8px;
 }
+
+nav.mainnav a{
+    margin-left: 12px;
+    text-decoration: none;
+    color-scheme: var(--secondary-color);
+    font-weight: 600;
+
+}
+
+nav.main a:first-child{ margin-left: 0;}
+
 article{
     position: absolute;
     bottom: auto;
@@ -51,8 +65,10 @@ article{
 /* Hero section */
 .hero {
     position: relative;
-    width: 100%;
-    height: auto;
+    margin: 8px 0 24px 0;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0 6px 18px rgba(10, 10, 10, 0.08);
 }
 
 /* Hero image */
@@ -65,23 +81,36 @@ article{
 /* Hero heading overlay */
 .hero h1 {
     position: absolute;
-    top: 10px; /* move to top of hero image */
+    top: 20px; /* move to top of hero image */
     left: 0;
     width: 100%;
-    padding: 0px;
+    padding: 16px;
     text-align: center;
     font-size: 2rem;
     background-color: var(--accent1-color);
     color: #ffffff;
     opacity: 0.9; /* slightly more visible */
+    box-sizing: border-box;
 }
 
+.hero article{
+    position: absolute;
+    left: 16px;
+    bottom: 16px;
+    max-width: 48%;
+    background-color: rgba(255, 255, 255, 0.92);
+    padding: 12px;
+    border-radius: 6px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+}
 /* Hero article image */
 .hero article img {
     float: right;
     width: 125px;
     margin-left: 12px;
     border-radius: 4px;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
 }
 
 /* Section styling */
