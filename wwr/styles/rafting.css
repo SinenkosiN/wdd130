@@ -1,157 +1,187 @@
+
 :root {
-    --primary-color: #0b5f8a;
-    --secondary-color: #0a8f6b;
-    --accent1-color: #fba00d;
-    --accent2-color: #ffffff; /* corrected from --accedent2-color */
-    --heading-font: "Arial", sans-serif; /* corrected spelling and quotes */
-    --body-font: Verdana, Helvetica, sans-serif; /* corrected spelling and commas */
-    ---max-width:840px ;
+    --primary-color: #fbc634;        
+    --secondary-color: #fbf7b8;      
+    --accent-color: #ffffff;        
+    --text-color: #000000;  
+
+    --font-primary: "Poppins", Arial, Helvetica, sans-serif;
 }
 
-/* Header */
-header {
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
-}
-
-/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body text styling */
 body {
-    font-family: var(--body-font);
-    color: var(--accent1-color);
-    background-color: #ffffff;
+    font-family: var(--font-primary);
     line-height: 1.5;
+    color: var(--text-color);
 }
 
-/* Page width and centering */
-header, main, footer {
-    width: 840px;
-    margin: 0 auto;
-}
-
-/* Headings */
-h1, h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-}
-
-/* Basic spacing for common elements */
-nav, p, section, article {
-    margin: 16px;
-    padding: 8px;
-}
-
-nav.mainnav a{
-    margin-left: 12px;
-    text-decoration: none;
-    color-scheme: var(--secondary-color);
-    font-weight: 600;
-
-}
-
-nav.main a:first-child{ margin-left: 0;}
-
-article{
-    position: absolute;
-    bottom: auto;
-}
-
-/* Hero section */
-.hero {
-    position: relative;
-    margin: 8px 0 24px 0;
-    overflow: hidden;
-    border-radius: 6px;
-    box-shadow: 0 6px 18px rgba(10, 10, 10, 0.08);
-}
-
-/* Hero image */
-.hero img {
-    display: block;
-    width: 100%;
+img {
+    max-width: 100%;
     height: auto;
 }
+*
 
-/* Hero heading overlay */
-.hero h1 {
-    position: absolute;
-    top: 20px; /* move to top of hero image */
-    left: 0;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    font-size: 2rem;
-    background-color: var(--accent1-color);
-    color: #ffffff;
-    opacity: 0.9; /* slightly more visible */
-    box-sizing: border-box;
-}
-
-.hero article{
-    position: absolute;
-    left: 16px;
-    bottom: 16px;
-    max-width: 48%;
-    background-color: rgba(255, 255, 255, 0.92);
-    padding: 12px;
-    border-radius: 6px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
-}
-/* Hero article image */
-.hero article img {
-    float: right;
-    width: 125px;
-    margin-left: 12px;
-    border-radius: 4px;
-    height: auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
-}
-
-/* Section styling */
-.section {
-    padding: 40px;
-    background: #ffffff;
-    margin: 20px;
-}
-
-.section h2 {
-    text-align: center;
-    color: var(--primary-color); /* corrected text color */
-    padding: 15px;
+nav ul {
+    list-style: none;       
+    display: flex;          
+    gap: 2rem;             
+    padding: 0;
     margin: 0;
 }
 
-/* Hero article overlay */
-.hero article {
-    position: absolute;
-    top: 20px; /* place at bottom */
-    left: 20px;
-    max-width: 100%;
-    padding: 0px;
-    text-align: left;
-    font-size: 16px;
-    background-color: rgba(242, 160, 13, 0.85); /* semi-transparent accent1 */
-    color: #ffffff;
+nav ul li a {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    color: black;
+    background: white;
+    border: 1px solid var(--secondary-color);
     border-radius: 6px;
 }
-/* Social media links */
-.socialmedia a {
+
+nav ul li a:hover {
+    background: var(--primary-color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+header {
+    background-color: var(--primary-color); /* Light purple like wireframe */
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+header img {
+    width: 120px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    padding: 0.5rem 1.2rem;
+    background: #ffffff;
+    border-radius: 6px;
     text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    border: 1px solid var(--primary-color);
 }
 
-.socialmedia img {
-    width: 32px;
-    margin: 0 10px;
+nav a:hover {
+    background: var(--secondary-color);
 }
 
-/* Footer */
-footer {
+/* ------------------------------
+   HERO (White Water Rafting)
+--------------------------------*/
+.hero {
     text-align: center;
-    padding: 30px;
+    padding: 2rem 1rem;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+    margin: 1rem auto;
+    width: 80%;
+    padding: 1rem;
+    border: 2px solid #444;
+}
+
+/* ------------------------------
+   HISTORY SECTION
+--------------------------------*/
+.history {
+    padding: 2rem 1rem;
+    background: var(--primary-color);
+    text-align: center;
+}
+
+.history h2 {
+    margin-bottom: 1rem;
+}
+
+.history-layout {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    gap: 2rem;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* ------------------------------
+   ADVENTURES SECTION
+--------------------------------*/
+.adventures {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.adventure-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.adventure-gallery figure {
+    text-align: center;
+}
+
+.adventure-gallery figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+/* ------------------------------
+   FOOTER
+--------------------------------*/
+footer {
+    background-color: var(--secondary-color);
+    margin-top: 2rem;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .social {
+    display: flex;
+    gap: 1rem;
+}
+
+footer .social img {
+    width: 40px;
 }
