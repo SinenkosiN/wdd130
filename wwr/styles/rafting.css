@@ -1,10 +1,7 @@
-
 :root {
     --primary-color: #fbc634;        
     --secondary-color: #fbf7b8;      
-    --accent-color: #ffffff;        
-    --text-color: #000000;  
-
+    --accent-color: #ffffff;         
     --font-primary: "Poppins", Arial, Helvetica, sans-serif;
 }
 
@@ -17,15 +14,17 @@
 body {
     font-family: var(--font-primary);
     line-height: 1.5;
-    color: var(--text-color);
+    color: #000; /* fallback text color */
 }
 
 img {
     max-width: 100%;
     height: auto;
 }
-*
 
+/* ------------------------------
+   NAVIGATION
+--------------------------------*/
 nav ul {
     list-style: none;       
     display: flex;          
@@ -47,25 +46,8 @@ nav ul li a:hover {
     background: var(--primary-color);
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.5;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-
 header {
-    background-color: var(--primary-color); /* Light purple like wireframe */
+    background-color: var(--primary-color);
     display: grid;
     grid-template-columns: 150px 1fr;
     align-items: center;
@@ -100,23 +82,33 @@ nav a:hover {
    HERO (White Water Rafting)
 --------------------------------*/
 .hero {
+    position: relative;       /* required for absolute children */
     text-align: center;
     padding: 2rem 1rem;
+    background: #000; /* optional fallback for image background */
 }
 
 .hero h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 2.5rem;
+    color: white;
+    z-index: 2;
+    margin: 0;
 }
 
-.hero-content {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 1rem;
-    margin: 1rem auto;
-    width: 80%;
-    padding: 1rem;
-    border: 2px solid #444;
+.hero article {
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    z-index: 1;
+}
+
+.hero article img {
+    float: right;
+    width: 300px; /* adjust as needed */
+    height: auto;
 }
 
 /* ------------------------------
@@ -151,7 +143,7 @@ nav a:hover {
 
 .adventure-gallery {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr); /* 5 figures as per assignment */
     gap: 1rem;
     margin-top: 1rem;
 }
