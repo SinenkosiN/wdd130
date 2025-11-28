@@ -94,7 +94,7 @@ nav a:hover {
     position: relative;
     width: 100%;
     max-width: 1200px;
-    margin: 4rem auto;
+    margin: 5rem auto;
 }
 
 .hero img {
@@ -106,7 +106,7 @@ nav a:hover {
 
 /* H1 overlays hero image */
 .hero h1 {
-    position: relative;
+    position: absolute;
     top: -90px;
     left: 50%;
     transform: translateX(-50%);
@@ -169,7 +169,7 @@ nav a:hover {
 
 .adventure-gallery {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 1rem;
     margin-top: 1rem;
 }
