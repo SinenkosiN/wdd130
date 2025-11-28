@@ -60,7 +60,7 @@ header img {
 
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     gap: 2rem;
 }
 
@@ -82,33 +82,59 @@ nav a:hover {
    HERO (White Water Rafting)
 --------------------------------*/
 .hero {
-    position: relative;       /* required for absolute children */
+    position: relative;       
     text-align: center;
     padding: 2rem 1rem;
-    background: #000; /* optional fallback for image background */
 }
 
+/* ------------------------------
+   HERO (White Water Rafting)
+--------------------------------*/
+.hero {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 4rem auto;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 2px solid #333;
+}
+
+/* H1 overlays hero image */
 .hero h1 {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    font-size: 2.5rem;
-    color: white;
-    z-index: 2;
-    margin: 0;
+    position: relative;
+    top: -90px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    color:#000000;
+    padding: 0;
+    border-radius: 8px;
+    font-weight: bold;
 }
 
+/* ARTICLE OVERLAY BOX */
 .hero article {
     position: absolute;
-    top: 80px;
-    right: 20px;
-    z-index: 1;
+    top: 10px;       
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background: #ffffff;
+    padding: 0rem;
+    z-index: 5;
 }
 
+/* Image floats RIGHT inside article */
 .hero article img {
     float: right;
-    width: 300px; /* adjust as needed */
-    height: auto;
+    width: 200px;
+    margin-left: 1rem;
+    border: 2px solid #ccc;
 }
 
 /* ------------------------------
@@ -143,7 +169,7 @@ nav a:hover {
 
 .adventure-gallery {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* 5 figures as per assignment */
+    grid-template-columns: repeat(4, 1fr); /* 5 figures as per assignment */
     gap: 1rem;
     margin-top: 1rem;
 }
