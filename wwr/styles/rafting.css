@@ -169,7 +169,7 @@ nav a:hover {
 
 .adventure-gallery {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 5 figures as per assignment */
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
     margin-top: 1rem;
 }
