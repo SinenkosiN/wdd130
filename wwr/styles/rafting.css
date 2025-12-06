@@ -50,7 +50,7 @@ nav a {
             background:var(--secondary-color);
         }
 
-iframe {
+.map-frame {
         width: 600px;
         height: 460px;
         }

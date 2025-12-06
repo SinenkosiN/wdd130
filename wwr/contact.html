@@ -19,10 +19,10 @@
         <div class="logo"><img src="images/logo.jpg" alt="Durban Rafting Company logo"></div>
 
         <nav>
-            <a href="#">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Trips</a>
-            <a href="#">Contact Us</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
     </header>
 
@@ -46,20 +46,36 @@
 
             <form action="#" method="post">
 
-                <label>Name</label>
-                <input type="text" placeholder="Placeholder" />
-                <label>Email</label>
-                <input type="email" placeholder="Placeholder" />
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your email" required>
+
                 <div class="radio-group">
                     <p>Message Purpose</p>
-                    <label><input type="radio" name="purpose" /> General Inquiry</label><br />
-                    <label><input type="radio" name="purpose" /> Reservation Question</label><br />
-                    <label><input type="radio" name="purpose" /> Website Suggestion</label>
+
+                    <label for="purpose-general">
+                        <input type="radio" id="purpose-general" name="purpose" value="general"> General Inquiry
+                    </label><br>
+
+                    <label for="purpose-reservation">
+                        <input type="radio" id="purpose-reservation" name="purpose" value="reservation"> Reservation
+                        Question
+                    </label><br>
+
+                    <label for="purpose-website">
+                        <input type="radio" id="purpose-website" name="purpose" value="website"> Website Suggestion
+                    </label>
                 </div>
-                <label>Message</label>
-                <textarea placeholder="Type here."></textarea>
-                <label><input type="checkbox" /> Please Subscribe me to the monthly newsletter</label>
-                <button>Get in Touch!</button>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Type here." required></textarea>
+                <label for="subscribe">
+                    <input type="checkbox" id="subscribe" name="subscribe"> Please subscribe me to the monthly
+                    newsletter
+                </label>
+                <button type="submit">Get in Touch!</button>
+
             </form>
         </section>
         <section class="team">
