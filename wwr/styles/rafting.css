@@ -1,7 +1,7 @@
 :root {
     --primary-color: #fbc634;        
     --secondary-color: #fbf7b8;      
-    --accent-color: #ffffff;         
+    --accent-color: black;         
     --font-primary: "Poppins", Arial, Helvetica, sans-serif;
 }
 
@@ -13,7 +13,7 @@
 
  body {
             font-family: Arial, sans-serif;
-            color: black;
+            color: var(--accent-color);
         }
 
 header , main, footer{
@@ -27,11 +27,11 @@ h1 , h2{
 }
 
 nav, p, section, article{
-        margin: 16 px;
+        margin: 16px;
         padding: 8px;
         }
 
-.socialmedia {
+.socialmedia a {
         text-decoration: none;
         }
 
@@ -49,10 +49,12 @@ h1{
         text-align: center;
         opacity: 0.7;
         background-color: var(--primary-color);
-        color: black;
+        color: var(--accent-color);
 }
 
 .hero article img{
+        position: absolute;
+        float: right;
         display: block;
         width: 100%;
         height: auto;
