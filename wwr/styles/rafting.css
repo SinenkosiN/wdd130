@@ -2,7 +2,7 @@
     --primary-color: rgb(240, 193, 23);     
     --secondary-color: blue ;      
     --accent-color: black;         
-    --font-primary: "Poppins", Arial, Helvetica, sans-serif;
+    --font-primary: "sans-serif", Arial, Helvetica, ;
 }
 
 * {
