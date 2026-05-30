@@ -23,6 +23,16 @@ footer {
     margin: 0 auto;
 }
 
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary-color);
+    margin-top:32px;
+    padding: 16px;
+    border: 1px var(--primary-color);
+    }
+    
 h1, h2{
     font-family: var(--font-primary);
 }
