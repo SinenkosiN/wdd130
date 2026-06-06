@@ -1,7 +1,7 @@
 :root {
     --primary-color: rgb(240, 193, 23);     
     --secondary-color: rgb(98, 95, 95);          
-    --font-primary: sans-serif, Arial, Helvetica ;
+    --font-primary: Arial, Helvetica, sans-serif ;
 }
 
 * {
@@ -33,6 +33,11 @@ header{
     align-items: center;
 }
 
+header img {
+    width: 150px;
+    height: auto;
+}
+
 .grid {
     display: grid;
     align-items: center;
@@ -57,8 +62,7 @@ nav, p, section, article {
 }
 
 nav a{
-color: var(--primary-color);
-text-decoration: none;
+    color: white
 }
 
 .socialmedia a{
@@ -78,8 +82,10 @@ text-decoration: none;
     position: absolute;
     bottom: 20px;
     left: 20px;
+    background-color: var(--primary-color);
 
 }
+
 h1{
     position: absolute;
     top: 20px;
@@ -101,17 +107,10 @@ figure img{
     height: auto;
 }
 
-figure{
+figure {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
-    margin-top:32px;
-    padding: 16px;
-    border: 1px solid var(--primary-color);
-}
-figcaption{
-    position: relative;
-    top: 60px;
 }
 
 footer{
