@@ -1,6 +1,6 @@
 :root {
-    --primary-color: rgb(240, 193, 23);     
-    --secondary-color: rgb(98, 95, 95);          
+    --primary-color: rgb(131, 106, 17);     
+    --secondary-color: rgb(53, 51, 51);       
     --font-primary: Arial, Helvetica, sans-serif ;
 }
 
@@ -50,11 +50,11 @@ h1, h2{
 }
 
 nav{ 
-background-color: var(--secondary-color);
-padding: 1rem;
-display: flex;
-align-items: center;
-justify-content: space-evenly;
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 nav, p, section, article {
